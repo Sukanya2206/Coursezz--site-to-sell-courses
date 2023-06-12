@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upGrad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+     <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section  class="sub-header">
+        <nav>
+        <a href="index.html"><img src="images/upgrad.png" height="35"></a>   
+        <div class="nav-links" id="navLinks">    
+        <ul>
+            <i class="fa fa-times" onclick="hideMenu()"></i> 
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="support.html">SUPPORT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="signup.php">SIGNUP</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars"onclick="showMenu()"></i>
+    </nav>
+<h1>Our Certificate & Online Programs For 2023</h1>
+</section>
+
+
+<!-----------Blog Page Content------------>
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate1.avif">
+            <h2>Overview and FAQs</h2>
+            <p>For many, online learning can be an attractive alternative to obtaining in-person university degrees. Top e-learning platforms offer free courses from the best schools in the world, famous companies like Google run short-term job training programs, and coding bootcamps are quickly becoming a means to quick and lucrative career switches. 
+<br>
+Upgrad is one of the most popular online learning platforms out there, offering a wide range of free courses, short certificate programs, and even online master's degrees. 
+                
+                </p>
+            <p><b>What is Upgrad?</b><br>
+                upGrad is India's largest online higher education company, as per monthly visit data and total visits data for the last 28 days received from similar web, as on April 13, 2020. Deakin University CRICOS Provider Code 00113B. Corporate & Financial Law | LL.M.</p>
+<br>
+<p><b>How does Upgrad work?</b><br>
+    UpGrad offers programs at some very reasonable prices as it reflects their commitment towards the education of candidates. Around 50% of revenue is collected from the candidates after completing their program.</p><br>
+   <br>
+
+    <p><b> What kinds of classes does Upgrad offer?</b><br>
+    Upgrad's education offerings run the gamut from personal development courses like its extremely popular Yale Science of Well-Being to workforce upskilling programs from companies like Google and IBM. Upgrad also offers online degrees in industries such as public health and computer science</p>
+<br>
+<p><b> Are Upgrad courses free?</b><br> 
+    Many Upgrad courses are free to audit, but students don't get access to things like graded homework assignments or certificates of completion when they're auditing a course.
+    <br>
+    Courses that are part of longer programs or specializations are usually free to try with a seven-day trial.</p>
+    <br>
+    <p><b>How much do Upgrad courses cost?</b><br>
+        Courses can range from $39-$49 per month to hundreds of dollars depending on the type and topic. The site also offers Upgrad Plus, which is a $399 annual subscription that gives its members unlimited access to over 90% of the e-learning platform's online courses (over 3,000 classes).
+        <br>
+        <br>
+        <b>Does Upgrad offer certificates?</b><br>
+        Yes, Upgrad offers certificates of completion for its courses if you pay for the course and complete the assignments. 
+        <br><br>
+        <b> Upgrad offer financial aid?</b><br>
+        Yes. However, programs like Upgrad MasterTracks (partial master's programs) are not eligible for financial aid.
+    </p>  
+<div class="comment-box">
+    <h3>Leave a comment</h3>
+    <form class="comment-form">
+        <input type="text" placeholder="Enter Name">
+        <input type="email" placeholder="Enter Email">
+        <textarea  rows="5" placeholder="Your comment">
+        </textarea>
+        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+    </form>
+</div>
+
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Python</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Psychology</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Blockchain</span>
+                <span>30</span>
+            </div>
+            <br>
+            <br>
+    <div class="support-container">
+    <h3>Any Quiries?</h3>
+    <form class="support-form">
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Type your quiry.." required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+              </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-----------Footer-------->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>Upgrad partners with more than 275 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> Upgrad</p>
+</section>
+
+
+<!-----------JavaScriprt for  Toggle menu-------->
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right="0";
+}
+function hideMenu(){
+    navLinks.style.right="-200px"; 
+}
+
+</script>
+</body>
+</html>

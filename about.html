@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+     <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   <section  class="sub-header">
+    <nav>
+    <a href="index.html"><img src="images/upgrad.png" height="40"></a>   
+    <div class="nav-links" id="navLinks">    
+    <ul>
+        <i class="fa fa-times" onclick="hideMenu()"></i> 
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="support.html">SUPPORT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="signup.php">SIGNUP</a></li>
+    </ul>
+</div>
+<i class="fa fa-bars"onclick="showMenu()"></i>
+</nav>
+<p>OUR VISION</p>
+<h1>Powering career success for every member of the global workforce as their trusted lifelong learning partner.
+    </h1>
+</section>
+
+<!----------about us content--------->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>More about Coursera</h1>
+            <p>Upgrad partners with more than 275 leading universities and companies to bring flexible, affordable, job-relevant online learning to individuals and organizations worldwide. We offer a range of learning opportunities—from hands-on projects and courses to job-ready certificates and degree programs.</p>
+            <a href="support.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+         <img src="images/comp-logo.png">
+            
+        </div>
+    </div>
+</section>
+
+
+<!-----------Footer-------->
+
+<section class="footer">
+    <h4>About US</h4>
+    <p>UpGrad is known as India's largest company that provides higher education in many fields, founded in 2015. UpGrad offers higher education through various programs in Technology, Law, Data Science, and Management. There aren't any specifications for the students. From students to professionals, anyone can sign up for these programs. </p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> Upgrad</p>
+</section>
+
+
+
+<!-----------JavaScriprt for  Toggle menu-------->
+<script>
+var navLinks = document.getElementById("navLinks");
+function showMenu(){
+    navLinks.style.right="0";
+}
+function hideMenu(){
+    navLinks.style.right="-200px"; 
+}
+
+</script>
+</body>
+</html>

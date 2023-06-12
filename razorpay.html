@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Razorpay Checkout</title>
+    <!-- include the Razorpay Checkout SDK script -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <button id="rzp-button">Pay with Razorpay</button>
+
+    <script>
+      // configure the Razorpay Checkout options
+      var options = {
+        "key": "YOUR_RAZORPAY_KEY_ID",
+        "amount": "1000", // amount in paisa
+        "currency": "INR",
+        "name": "My Business",
+        "description": "Purchase Description",
+        "image": "https://my-business.com/logo.png",
+        "handler": function (response) {
+          // handle the payment success response
+          alert("Payment Successful");
+        },
+        "prefill": {
+          "name": "Sukanya Patil",
+          "email": "sukanya.patil@example.com",
+          "contact": "9999999999"
+        }
+      };
+
+      // create a Razorpay checkout object
+      var rzp = new Razorpay(options);
+
+      // attach the Razorpay checkout button click event
+      document.getElementById("rzp-button").onclick = function (e) {
+        rzp.open();
+        e.preventDefault();
+      };
+    </script>
+  </body>
+</html>
